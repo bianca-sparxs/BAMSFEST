@@ -2,20 +2,27 @@
 <html>
     <body>
         <head>
+            <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+            <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+            <script src="./invert_scroll.js"></script>
             <link rel="stylesheet" type="text/css" href="./styles.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Source+Code+Pro:900&display=swap" rel="stylesheet"> 
             <?xml version="1.0" encoding="utf-8"?>
         </head>
+
+        <div class="alert">
+            <p class="title">PLease go to potrait mode for best experience, my b!</p>
+        </div>
 
         
         
         
 
         <div class="container">
-            <nav>
-                <ul>
-                    <li>BAMSFEST Site</li>
-                </ul> 
-            </nav>
+                <nav>
+                    <img class="logo" src="./assets/bamsfest_logo.png" width="20%"/>
+                    <!-- Boston Art, Music, and Soul Festival      -->
+                </nav>
 
             <div class="row1">
                 <svg width="40">
@@ -43,7 +50,7 @@
                         S107.55,52.89,178.53,52.81C249.51,52.72,307.12,110.19,307.2,181.17z"/>
                     <text>
                         <textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="9%">
-                            <tspan  style="fill:#3C2415; font-size:34.6926px;">Franklin Park</tspan>
+                            <tspan  style="fill:#3C2415; font-family: 'Archivo Black'; font-size:34.6926px; text-transform:uppercase">Franklin Park</tspan>
                             <animate xlink:href="#SVGID_x5F_1_x5F_"
                             attributeName="startOffset" 
                             values="1;5;1" 
@@ -55,19 +62,39 @@
                     <path id="SVGID_x5F_2_x5F_" class="st0" d="M128.88,102.47c43.34-27.71,100.95-15.03,128.66,28.31s15.03,100.95-28.31,128.66
                         c-43.34,27.71-100.95,15.03-128.66-28.31S85.54,130.18,128.88,102.47z"/>
                     <text><textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="2%">
-                    <tspan  style="fill:#3C2415; font-size:12.7133px;">ART, MUSIC, AND SOUL</tspan></textPath>
+                    <tspan  style="fill:#3C2415; font-family: 'Archivo Black'; font-size:30.7133px; text-transform:uppercase">Playstead Field</tspan></textPath>
                     </text>
                     </svg>
             </div>
 
             <div class="vhs-bar">
-                <svg viewBox="0 0 30 10">
-                    <rect width="30" height="10" fill="#D0CAC2" />
+                <svg width="190" height="70">
+                    <rect width="190" height="70" fill="#3C2415" />
                 </svg>
             </div>
                 
-            <img class="item" src="./assets/cassette_1.svg" width="100%"/>
-            
+            <div class="item-wrapper"><img class="item" src="./assets/cassette_1.svg" width="100%"/></div>
+
+            <div>
+
+            </div>
+            <div class="title content">
+                The Lineup:
+            </div>
         </div>
+
+        <div id="scroller" class="scrolling-text">
+                <p>
+                        <span class="yellow">DJ REAL P • NWASOUL • THE TEE-TONERS • RED SHAYDEZ </span> 
+                        <span class="orange">• BRANDEE YOUNGER QUINTET • CIPHERELLA • ALEECYA • CLIFF</span>
+                        <span class="red"> NOTEZ • AMERICAN SYMPHONY OF SOUL • SAMBAVIVA • ASHLEY</span> 
+                        <span class="purple">ROSE • CHOPPA THE BEATBOXA • SAFIYA • ÄDIANA ROSS FEAT.</span>
+                        <span class="violet"> NOQ • ÁBI • DALAUN • OPTIC BLOOM • LUKE BAR$</span>
+                </p>
+        </div>
+
+        <p style="font-family: 'Archivo Black'; text-transform: uppercase; font-size: 4vw;"> Apply to be a vendor today.</p>
+
     </body>
+
 </html>

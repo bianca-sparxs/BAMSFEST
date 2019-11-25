@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:900&display=swap'); */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -8,35 +10,115 @@ body {
     
     
 }
+
+@media screen and (orientation:portrait)
+{
+   body
+   {
+      background: red;
+   }
+
+   div.alert {
+       display: block;
+   }
+
+   div.container, #scroller {
+       display: none;
+   }
+}
+
+.alert{
+    display: none;
+}
+
+
+
+
+.container {
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: 23% 20% auto 20% 23%;
+    height: inherit;
+    grid-template-rows: 12% 13% auto 25%;
+    
+
+    background-image: url('./assets/polaroid_stripe-01.svg');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 nav {
-    grid-row-start: 1;
+    margin-top: -10%;
+    color: #3C2415;
+    padding: 0 30px 0 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* justify-self: end; */
+    font-family: 'Archivo Black', sans-serif;
+
+
+    
+    /* float: left; */
 
 }
+
+.title {
+    margin-top: 14vw;
+    font-family: 'Archivo Black';
+    font-size: 3vw;
+    color: #3C2415;
+}
+
 .row1 {
     width: 100%;
     grid-column-start: 2;
     grid-row-start: 2;
+    align-self: end;
 }
+.row2 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    justify-self: end;
+    align-self: end;
+}
+
+
 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
 }
 
-.item {
+.item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+   
+
+}
+
+/* .item {
+    
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     justify-self: end;
+} */
+
+.content {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
-.row2 {
-    /* display: block; */
-    grid-column-start: 4;
-    grid-row-start: 2;
-    justify-self: end;
-}
 
 .vhs-bar {
     display: flex;
@@ -47,18 +129,47 @@ nav {
     grid-row-start: 3;
 
 }
-
-
-.container {
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: 16% 25% auto 25% 16%;
-    height: inherit;
-    grid-template-rows: 7% 18% auto 18% 7%;
-    
-
-    background-image: url('./assets/polaroid_stripe-01.svg');
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: center center;
+body::-webkit-scrollbar {  
+    display: none;
 }
+
+.scrolling-text{
+    
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10vw;
+
+    /* align-self: end;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 6; */
+    
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+.yellow {
+    color: #FFE700;
+}
+
+.orange {
+    color: #FF9F37;
+}
+
+.red {
+    color: #FB5058;
+}
+
+.purple {
+    color: #C452B4;
+}
+
+.violet {
+    color: #3B44AC;
+}
+
+
