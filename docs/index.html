@@ -1,121 +1,116 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+        <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+        <script src="./invert_scroll.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"> 
+        <link rel="subresource" href="./assets/timeName.svg">
+        <link rel="subresource" href="./assets/placeDate.svg">
+    </head>
+    
     <body>
-        <head>
-            <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-            <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
-            <script src="./invert_scroll.js"></script>
-            <link rel="stylesheet" type="text/css" href="./styles.css"/>
-            <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Source+Code+Pro:900&display=swap" rel="stylesheet"> 
-            <link rel="subresource" href="./assets/timeName.svg">
-            <link rel="subresource" href="./assets/placeDate.svg">
-        </head>
+        
 
-        <div class="alert">
-            <p class="title">PLease go to potrait mode for best experience, my b!</p>
-        </div>
+        
 
         
         <div class="bigboi">
             BAMSFEST
+    
+        </div>
+    
+
+        <div class="alert">
+                <p class="title">This site works in landscape mode, flip that device!</p>
         </div>
 
         
         
 
         <div class="container">
-                
 
-            <div class="row1">
-                <svg width="40">
-                    <circle cx="20" cy="120" r="12.2" fill="black"/>
-                </svg>
+            <div class="row">
+                <div class="row1">
+                    <svg width="40" height="40">
+                        <circle cx="20" cy="20" r="12.2" fill="#121212"/>
+                    </svg>
+                </div>
+
+                <div class="vhs-bar">
+                    <svg width="190" height="70">
+                        <!-- <rect width="190" height="70" fill="#121212" /> -->
+                        <rect width="190" height="70" fill="#ede2d8" />
+                        
+                    </svg>
+                </div>
+
+                <div class="row2">
+                    <svg width="40" height="40">
+                        <circle cx="20" cy="20" r="12.2" fill="#121212"/>
+                    </svg>
+                </div>
             </div>
 
-            <div class="row2">
-                <svg width="40">
-                    <circle cx="20" cy="120" r="12.2" fill="black"/>
-                </svg>
-            </div>
-
-            <div class="wrapper">
-                    <!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                    <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 371.96 363.76" style="enable-background:new 0 0 371.96 363.76;" xml:space="preserve">
-                            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="360" to="0" dur="8s" begin="0" repeatCount="indefinite" />
-                    
-                    <style type="text/css">
-                        .st0{fill:none;}
-                        .st1{fill:#F1F2F2;}
-                    </style>
-                    <path id="SVGID_x5F_1_x5F_" class="st0" d="M307.2,181.17c0.08,70.98-57.39,128.59-128.36,128.67S50.25,252.46,50.17,181.48
-                        S107.55,52.89,178.53,52.81C249.51,52.72,307.12,110.19,307.2,181.17z"/>
-                    <text>
-                        <textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="9%">
-                            <tspan  style="fill:#3C2415; font-family: 'Archivo Black'; font-size:34.6926px; text-transform:uppercase">Franklin Park</tspan>
-                            <animate xlink:href="#SVGID_x5F_1_x5F_"
-                            attributeName="startOffset" 
-                            values="1;5;1" 
-                            dur="8s" 
-                            repeatCount="indefinite"/>
-                        </textPath>
-                    </text>
-                    <circle class="st1" cx="179.06" cy="180.96" r="15.05"/>
-                    <path id="SVGID_x5F_2_x5F_" class="st0" d="M128.88,102.47c43.34-27.71,100.95-15.03,128.66,28.31s15.03,100.95-28.31,128.66
-                        c-43.34,27.71-100.95,15.03-128.66-28.31S85.54,130.18,128.88,102.47z"/>
-                    <text><textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="2%">
-                    <tspan  style="fill:#3C2415; font-family: 'Archivo Black'; font-size:30.7133px; text-transform:uppercase">Playstead Field</tspan></textPath>
-                    </text>
-                    </svg> -->
+            <div class="row vhs">
+                <div class="wrapper">
                     <img class="item" src="./assets/timeName.svg" width="100%"/>
-            </div>
-
-            <div class="vhs-bar">
-                <svg width="190" height="70">
-                    <rect width="190" height="70" fill="#3C2415" />
-                </svg>
-            </div>
+                </div>
                 
-            <div class="item-wrapper"><img class="item" src="./assets/placeDate.svg" width="100%"/></div>
-        </div>
+                <div class="vhs-bar">
+                    <svg width="190" height="70">
+                        <rect width="190" height="70" fill="#3C2415" />
+                    </svg>
+                </div>
+
+                <div class="item-wrapper">
+                    <img class="item" src="./assets/placeDate.svg" width="100%"/>
+                </div>
+            </div>
+        
 
 
         <div class="contain-content">
 
-            <div class="title content">
+            <h2 class="title content t1">
                 Convening artists of <br>color
                 to succeed.
+            </h2>
 
-                <p class="info">BOSTON ART & MUSIC SOUL (BAMS) Festival is one of the fastest growing urban 
-                    arts and music festivals in the City of Boston that celebrates Afro-centric identify and 
-                    Black artistry, all while amplifying the voices and creative contributions from local, 
-                    regional and national entertainers of color.
-                </p>
+            <p class="info brown">BOSTON ART & MUSIC SOUL (BAMS) Festival is one of the fastest growing urban 
+                arts and music festivals in the City of Boston that celebrates Afro-centric identify and 
+                Black artistry, all while amplifying the voices and creative contributions from local, 
+                regional and national entertainers of color.
+            </p>
 
-                <p class="title"> The Title</p>
-            </div>
-        
-
+            <h2 class="title t2"> THE LINEUP</h2>
             
-
-            <p style="font-family: 'Archivo Black'; text-transform: uppercase; font-size: 4vw;"> Apply to be a vendor today.</p>
-
-
-            <nav>
-                    <img class="logo" src="./assets/bamsfest_logo.png" width="20%"/>
-                    <!-- Boston Art, Music, and Soul Festival      -->
-            </nav>
         </div>
 
         <div id="scroller" class="scrolling-text">
                 <p>
                         <span class="yellow">DJ REAL P • NWASOUL • THE TEE-TONERS • RED SHAYDEZ </span> 
-                        <span class="orange">• BRANDEE YOUNGER QUINTET • CIPHERELLA • ALEECYA • CLIFF</span>
-                        <span class="red"> NOTEZ • AMERICAN SYMPHONY OF SOUL • SAMBAVIVA • ASHLEY</span> 
+                        <span class="orange">• BRANDEE YOUNGER QUINTET • CIPHERELLA • ALEECYA • CLIFF NOTEZ</span>
+                        <span class="red">  • AMERICAN SYMPHONY OF SOUL • SAMBAVIVA • ASHLEY</span> 
                         <span class="purple">ROSE • CHOPPA THE BEATBOXA • SAFIYA • ÄDIANA ROSS FEAT.</span>
                         <span class="violet"> NOQ • ÁBI • DALAUN • OPTIC BLOOM • LUKE BAR$</span>
                 </p>
         </div>
+
+        
+
+        
+            <nav>
+                <img class="logo" src="./assets/bamsfest_logo.png"/>
+                <p class="vendor"> Apply to be a vendor today.</p>
+                
+                <!-- Boston Art, Music, and Soul Festival      -->
+            </nav>
+        </div>
+
+        
+    </div>
 
     </body>
 

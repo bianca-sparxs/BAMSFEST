@@ -3,10 +3,18 @@
 html, body {
     height: 100%;
     margin: 0;
+    
+    font-family: 'Archivo Black', sans-serif;
 }
 
+.brown {
+    color: #3C2415; 
+}
+
+
 body {
-    background-color: #D0CAC2;
+    /* background-color: #D0CAC2; */
+    background-color: #ede2d8;
     
     
 }
@@ -31,71 +39,32 @@ body {
     display: none;
 }
 
-.container {
-    /* margin-top: 8%; */
-    display: grid;
-    grid-template-columns: 23% 20% auto 20% 23%;
-    height: auto;
-    grid-template-rows: 15% 15%;
-
-    
-
-    background-image: url('./assets/polaroid_stripe-01.svg');
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.contain-content {
-    /* margin-top: 8%; */
-    display: grid;
-    grid-template-columns: 23% 20% auto 20% 23%;
-    height: inherit;
-    grid-template-rows: 15% 15% auto;
-
-    
-
-    background-image: url('./assets/polaroid_stripe-01.svg');
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-nav {
-    /* margin-top: -10%; */
-    color: #3C2415;
-    padding: 0 30px 0 30px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    /* justify-self: end; */
-    font-family: 'Archivo Black', sans-serif;
-
-
-    
-    /* float: left; */
-
-}
-
-.title {
-    margin-top: 10vw;
-    font-family: 'Archivo Black';
-    font-size: 3vw;
-    color: #3C2415;
-}
-
+/* Landing Page Sect */
 .bigboi {
     display: flex;
     justify-content: center;
     font-size: 16vw;
-    font-family: 'Archivo Black', sans-serif;
+  
     width: 100%;
 }
 
-.info {
-    font-size: 1.5vw;
-    font-family: 'Archivo Black';
-    color: #3C2415;
+.container {
 
+    height: auto;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 23% 20% auto 20% 23%;
+}
+
+.vhs {
+    width: 100%;
+    background-image: url('./assets/polaroid_stripe-01.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .row1 {
@@ -119,7 +88,7 @@ nav {
     width: 100%;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
+
 }
 
 .item-wrapper {
@@ -128,10 +97,80 @@ nav {
     align-items: center;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 2;
+
    
 
 }
+
+/* The Meat and Content */
+
+.contain-content {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 15% 23% 23% 23% 15%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "space-a title-1 title-1 space-1 space-1"
+        "space-b content content space-2 space-2"
+        "space-c content-b title-2 title-2 space-4";
+
+    height: inherit;
+    
+}
+
+.title {
+    font-family: 'Archivo Black';
+    font-size: 3vw;
+    color: #000000;
+    grid-area: title-1;
+}
+
+.t1 {
+    grid-area: title-1;
+}
+
+.t2 {
+    margin-top: 10vw;
+    margin-bottom: -5vw;
+    grid-area: title-2;
+    justify-self: end;
+}
+
+.info {
+    font-size: 1.5vw;
+    grid-area: content;
+
+}
+
+/* Footer */
+
+nav {
+    /* margin-top: -10%; */
+    padding: 20px;
+    display: grid;
+
+    grid-template-columns: repeat(10, 10%);
+
+    grid-template-areas: "space-0 logo vendor vendor space space space social-1 social-2 social-3";
+}
+
+.vendor {
+    grid-area: vendor;
+    font-size: 10px;
+}
+
+.logo {
+    width: 30%;
+    grid-area: logo;
+}
+
+
+
+
+
+
+
+
 
 /* .item {
     
@@ -141,12 +180,6 @@ nav {
     justify-self: end;
 } */
 
-.content {
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    margin-left: -3vw;
-}
 
 
 
@@ -156,7 +189,6 @@ nav {
     align-items: center;
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 2;
 
 }
 body::-webkit-scrollbar {  
@@ -165,8 +197,8 @@ body::-webkit-scrollbar {
 
 .scrolling-text{
     
-    font-family: 'Source Code Pro', monospace;
-    font-size: 10vw;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 7vw;
 
     /* align-self: end;
     grid-row-start: 3;
