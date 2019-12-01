@@ -7,8 +7,9 @@
 	.st1{fill:#3C2415;}
 	.st2{fill:#F1F1F2;}
 </style>
-<animateTransform  accumulate="none" additive="replace" attributeName="transform" attributeType="xml" begin="0" calcMode="linear" dur="7s" fill="remove" from="0" repeatCount="indefinite" restart="always" to="360" type="rotate">
-	</animateTransform>
+<!-- DO NOT use SMIL animations— very low support! -->
+<!-- <animateTransform  accumulate="none" additive="replace" attributeName="transform" attributeType="xml" begin="0" calcMode="linear" dur="7s" fill="remove" from="0" repeatCount="indefinite" restart="always" to="360" type="rotate">
+	</animateTransform> -->
 
 <g>
 	<ellipse class="st0" cx="233.3" cy="233.9" rx="169.8" ry="169.8"/>

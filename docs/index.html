@@ -2,7 +2,7 @@
 <html>
     <head>
         <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-        <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+        <!-- <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script> -->
         <script src="./invert_scroll.js"></script>
         <link rel="stylesheet" type="text/css" href="./styles.css"/>
         <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"> 
@@ -30,7 +30,8 @@
         
 
         <div class="container">
-
+            
+<!-- Row that has the two casette dots -->
             <div class="row">
                 <div class="row1">
                     <svg width="40" height="40">
@@ -53,25 +54,10 @@
                 </div>
             </div>
 
+<!-- Second row with the color bar -->
             <div class="row vhs">
                 <div class="wrapper">
-                    <img class="item" src="./assets/timeName.svg" width="100%"/>
-                    <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 468 468" xml:space="preserve">
-                    <style type="text/css">
-                        .st0{fill:none;}
-                        .st1{fill:#F1F1F2;}
-                    </style>
-                    <path id="SVGID_x5F_1_x5F_" class="st0" d="M352.9,315.7c-44.6,65.7-134,82.7-199.6,38.2s-82.7-134-38.2-199.6s134-82.7,199.6-38.2
-                        S397.5,250,352.9,315.7z"/>
-                    <text width="100%"><textPath id="hello" alignment-baseline="top" xlink:href="#SVGID_x5F_1_x5F_" startOffset="7.1843%">JULY 19, 2019</textPath>
-                    </text>
-                    <circle class="st1" cx="233.3" cy="233.9" r="21.2"/>
-                    <path id="SVGID_x5F_2_x5F_" class="st0" d="M283.2,144.6c49.9,28.2,67.5,91.4,39.3,141.3c-28.2,49.9-91.4,67.5-141.3,39.3
-                        s-67.5-91.4-39.3-141.3S233.3,116.5,283.2,144.6z"/>
-                    <text width="100%"><textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="0%">ART, MUSIC, AND SOUL</textPath>
-                    </text>
-                    </svg> -->
+                    <img id="left_circ" class="item" src="./assets/timeName.svg" width="100%"/>
                 </div>
                 
                 <div class="vhs-bar">
@@ -81,7 +67,7 @@
                 </div>
 
                 <div class="item-wrapper">
-                    <img class="item" src="./assets/placeDate.svg" width="100%"/>
+                    <img id="right_circ" class="item" src="./assets/placeDate.svg" width="100%"/>
                 </div>
             </div>
         
@@ -104,6 +90,8 @@
             
         </div>
 
+
+    
         <div id="scroller" class="scrolling-text">
                 <p>
                         <span class="yellow">DJ REAL P • NWASOUL • THE TEE-TONERS • RED SHAYDEZ </span> 
@@ -113,6 +101,7 @@
                         <span class="violet"> NOQ • ÁBI • DALAUN • OPTIC BLOOM • LUKE BAR$</span>
                 </p>
         </div>
+    
 
         
 

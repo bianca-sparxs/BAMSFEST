@@ -7,11 +7,6 @@ html, body {
     font-family: 'Archivo Black', sans-serif;
 }
 
-.brown {
-    color: #3C2415; 
-}
-
-
 body {
     /* background-color: #D0CAC2; */
     background-color: #ede2d8;
@@ -19,10 +14,39 @@ body {
     
 }
 
+
+.yellow {
+    color: #F2DF4B;
+}
+
+.orange {
+    color: #FF9F37;
+}
+
+.red {
+    color: #FB5058;
+}
+
+.purple {
+    color: #C452B4;
+}
+
+.violet {
+    color: #3B44AC;
+}
+
+.brown {
+    color: #3C2415; 
+}
+
+
+/* Phone stuff */
+
 @media screen and (orientation:portrait)
 {
    body
    {
+       /* Change this please geez */
       background: red;
    }
 
@@ -102,6 +126,70 @@ body {
 
 }
 
+#right_circ {
+    -webkit-animation: rotation 4s infinite linear;
+    -moz-animation: rotation 4s infinite linear;
+    -o-animation: rotation 4s infinite linear;
+    -ms-animation: rotation 4s infinite linear;
+    animation: rotation 4s infinite linear;
+}
+
+
+@-webkit-keyframes rotation {
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% { -moz-transform: rotate(0deg);}
+    100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% { -o-transform: rotate(0deg);}
+    100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes rotation {
+    0% { -ms-transform: rotate(0deg);}
+    100% { -ms-transform: rotate(360deg);}
+}
+@keyframes rotation {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+} 
+
+
+#left_circ {
+    -webkit-animation: rotation-i 3s infinite linear;
+    -moz-animation: rotation-i 3s infinite linear;
+    -o-animation: rotation-i 3s infinite linear;
+    -ms-animation: rotation-i 3s infinite linear;
+    animation: rotation-i 3s infinite linear;
+}
+
+
+@-webkit-keyframes rotation-i {
+    0% { -webkit-transform: rotate(360deg);}
+    100% { -webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes rotation-i {
+    0% { -moz-transform: rotate(360deg);}
+    100% { -moz-transform: rotate(0deg);}
+}
+@-o-keyframes rotation-i {
+    0% { -o-transform: rotate(360deg);}
+    100% { -o-transform: rotate(0deg);}
+}
+@-ms-keyframes rotation-i {
+    0% { -ms-transform: rotate(360deg);}
+    100% { -ms-transform: rotate(0deg);}
+}
+@keyframes rotation-i {
+    0% { transform: rotate(360deg);}
+    100% { transform: rotate(0deg);}
+} 
+
+
+
+
 /* The Meat and Content */
 
 .contain-content {
@@ -165,24 +253,6 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-/* .item {
-    
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    justify-self: end;
-} */
-
-
-
-
 .vhs-bar {
     display: flex;
     justify-content: center;
@@ -191,47 +261,26 @@ nav {
     grid-column-end: 4;
 
 }
+
+/* Scrolly effect */
+
 body::-webkit-scrollbar {  
     display: none;
+    /* overflow-y: scroll; */
+    
 }
+
+
 
 .scrolling-text{
-    
-    font-family: 'Archivo Black', sans-serif;
     font-size: 7vw;
-
-    /* align-self: end;
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 6; */
-    
-    
     overflow-x: scroll;
     overflow-y: hidden;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
 
 
 
 
-.yellow {
-    color: #F2DF4B;
-}
-
-.orange {
-    color: #FF9F37;
-}
-
-.red {
-    color: #FB5058;
-}
-
-.purple {
-    color: #C452B4;
-}
-
-.violet {
-    color: #3B44AC;
-}
 
 
