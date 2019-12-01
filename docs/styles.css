@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:900&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html, body {
     height: 100%;
@@ -47,11 +48,23 @@ body {
    body
    {
        /* Change this please geez */
-      background: red;
+      background-color: #121212;
+      color: white;
+      background-image: url('./assets/polaroid_stripe-01.svg');
+    
+    background-repeat: no-repeat;
+    background-position: center center;
    }
 
+  
+
    div.alert {
-       display: block;
+        display: block;
+        font-size: 3vw;
+        padding: 10px;
+        /* text-transform: uppercase; */
+
+
    }
 
    div.container, #scroller {
@@ -59,8 +72,27 @@ body {
    }
 }
 
+@media only screen and (max-width: 1000px) {
+    .info {
+        font-size: 2.5vw !important;
+        grid-column-start: 2 !important;
+        grid-column-end: 5 !important;
+    }
+
+    .grid {
+        margin-left: -5%;
+
+    }
+
+    .rectangle{
+        width: 140px ;
+        height: 40px ;
+    }
+}
+
 .alert {
     display: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Landing Page Sect */
@@ -89,6 +121,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
 }
 
 .row1 {
@@ -193,7 +226,7 @@ body {
 /* The Meat and Content */
 
 .contain-content {
-    margin-top: 5%;
+    margin-top: 7%;
     display: grid;
     grid-template-columns: 15% 23% 23% 23% 15%;
     grid-template-rows: auto;
@@ -211,6 +244,7 @@ body {
     font-size: 3vw;
     color: #000000;
     grid-area: title-1;
+    text-transform: uppercase;
 }
 
 .t1 {
@@ -225,10 +259,12 @@ body {
 }
 
 .info {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     grid-area: content;
 
 }
+
 
 /* Footer */
 
