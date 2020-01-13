@@ -43,52 +43,7 @@ body {
 
 /* Phone stuff */
 
-@media screen and (orientation:portrait)
-{
-   body
-   {
-       /* Change this please geez */
-      background-color: #121212;
-      color: white;
-      background-image: url('./assets/polaroid_stripe-01.svg');
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-   }
 
-  
-
-   div.alert {
-        display: block;
-        font-size: 3vw;
-        padding: 10px;
-        /* text-transform: uppercase; */
-
-
-   }
-
-   div.container, #scroller {
-       display: none;
-   }
-}
-
-@media only screen and (max-width: 1000px) {
-    .info {
-        font-size: 2.5vw !important;
-        grid-column-start: 2 !important;
-        grid-column-end: 5 !important;
-    }
-
-    .grid {
-        margin-left: -5%;
-
-    }
-
-    .rectangle{
-        width: 140px ;
-        height: 40px ;
-    }
-}
 
 .alert {
     display: none;
@@ -97,17 +52,33 @@ body {
 
 /* Landing Page Sect */
 .bigboi {
-    display: flex;
-    justify-content: center;
-    font-size: 16vw;
+    /* display:flex;
+    justify-content: center; */
+    
+    font-size: 17vw;
+
+    overflow-x: hidden;
+    white-space: nowrap;
   
     width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: #ede2d8;
+    z-index: 100;
+    margin-left: -10px;
+
 }
+
 
 .container {
 
     height: auto;
 
+}
+
+.grid{
+    margin-top: 27vw;
 }
 
 .row {
@@ -315,8 +286,66 @@ body::-webkit-scrollbar {
     white-space: nowrap; 
 }
 
+#scroller:hover {
+    cursor: url(assets/Right\ Arrow\ v3.cur), auto;
+}
 
 
 
 
 
+
+@media screen and (orientation:portrait)
+{
+   body
+   {
+       /* Change this please geez */
+      background-color: #121212;
+      color: white;
+      /* background-image: url('./assets/polaroid_stripe-01.svg'); */
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+
+  
+
+   div.alert {
+        display: block;
+        font-size: 7vw;
+        padding: 10px;
+        margin-top: 30vw;
+        width: 80%;
+        /* text-transform: uppercase; */
+
+
+   }
+
+   div.container, #scroller, .grid {
+       display: none;
+   }
+
+   .bigboi {
+    background-color: #121212 !important;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+    .info {
+        font-size: 2.5vw !important;
+        grid-column-start: 2 !important;
+        grid-column-end: 5 !important;
+    }
+
+    
+
+    .grid {
+        margin-left: -5%;
+
+    }
+
+    .rectangle{
+        width: 140px ;
+        height: 40px ;
+    }
+}
